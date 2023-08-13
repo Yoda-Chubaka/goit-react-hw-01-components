@@ -15,8 +15,8 @@ export const ProfileCard = styled.div`
   width: 360px;
   
   border-radius: ${props => props.theme.radii.medium};
-  box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
-  background-color: ${props => props.theme.colors.background};
+  border: 1px solid grey;
+  background-color: ${props => props.theme.colors.white};
 `;
 
 export const Description = styled.div`
@@ -37,25 +37,19 @@ export const Avatar = styled.img`
   width: 150px;
 
   border-radius: 50%;
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-
-  &:hover {
-    background: #ecf0f3;
-    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-  }
+  border: 1px solid grey;
 `;
 
 export const Info = styled.p`
-  color: ${props => props.theme.colors.accent};
-  text-shadow: 1px 1px 1px ${props => props.theme.colors.white};
+  color: #000;
   font-family: ${props => props.theme.fonts.heading};
   font-size: ${props => props.theme.fontSizes.m};
 `;
 
 export const Name = styled(Info)`
-  color: ${props => props.theme.colors.accent};
+  color: #000;
   font-size: ${props => props.theme.fontSizes.l};
-  font-weight: 500;
+  font-weight: 700;
 `;
 
 export const Tag = styled(Info)`
@@ -73,6 +67,8 @@ export const StatsList = styled.ul`
   align-items: center;
   padding: ${props => props.theme.space[4]}px;
   width: 100%;
+  background-color: #e9edff;
+  border: 1px solid grey;
 `;
 
 export const StatsItem = styled.li`
@@ -81,22 +77,14 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 width: 100%;
-
-  &:hover {
-    background: #ecf0f3;
-    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-  }
-
-  :not(:last-child){
-  border-right: 1px dotted ${props => props.theme.colors.primary};
-
-  }
+border: 1px solid grey;
 `;
 
 export const StatsInfo = styled.span`
   margin: 0px 5px;
   color: ${props => props.theme.colors.primary};
   font-size: 16px;
+  color: grey;
 `;
 
 export const Label = styled(StatsInfo)`

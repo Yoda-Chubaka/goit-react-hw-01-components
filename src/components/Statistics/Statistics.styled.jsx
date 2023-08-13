@@ -10,7 +10,8 @@ export const Section = styled.section`
   max-width: 100%;
   width: 360px;
 
-  box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
+  border: 1px solid grey;
+  background-color: #fff;
   border-radius: 8px;
 `;
 
@@ -18,8 +19,7 @@ export const Title = styled.h2`
   padding: ${props => props.theme.space[4]}px;
 
   border-bottom: 1px solid #d3d5e3;
-  color: ${props => props.theme.colors.accent};
-  text-shadow: 1px 1px 1px #fff;
+  color: #000;
   font-family: ${props => props.theme.fonts.heading};
   font-weight: ${props => props.theme.fontWeights.bold};
   font-size:  font-size: ${props => props.theme.fontSizes.l};
@@ -49,9 +49,6 @@ export const StatListItem = styled.li`
 
   width: 100%;
   height: 100%;
-
-  text-shadow: 0 0 1px #000;
-
 
   :first-child {
     border-bottom-left-radius: 0.5rem;
