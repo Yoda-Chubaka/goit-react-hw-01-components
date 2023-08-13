@@ -47,7 +47,7 @@
 "eslint-plugin-graphql": "^0.4.0",
 "eslint-plugin-import": "^2.2.0",
 "eslint-plugin-jsx-a11y": "^6.6.0",
-"eslint-plugin-react": "^7.5.1"
+"eslint-plugin-react": "^7.30.1"
   },
   "description": "This project was created with\r [Create React App](https://github.com/facebook/create-react-app). To get\r acquainted and configure additional features\r [refer to documentation](https://facebook.github.io/create-react-app/docs/getting-started).",
   "main": "index.js",
